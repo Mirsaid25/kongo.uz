@@ -1,8 +1,18 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container{
+  @apply w-full max-w-[1240px] max-xl:max-w-full max-xl:px-10 max-sm:px-0 max-sm:w-[90%] m-auto
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
