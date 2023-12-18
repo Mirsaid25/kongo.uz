@@ -1,6 +1,7 @@
 import BottomPanel from "@/components/BottomPanel";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { GiFeather } from "react-icons/gi";
 
 export default function IndexLayout({
 	children,
@@ -22,10 +23,13 @@ export default function IndexLayout({
 	return (
 		<>
 			<Header/>
-			<main>
+			<main className="mt-20">
 				{children}
 			</main>
 			<Footer />
+			<button title="send" className="fixed bottom-10 right-10 max-sm:right-5 bg-[#ffffff22] backdrop-blur-md rounded-full p-3">
+                <GiFeather size={25}/>
+			</button>
 		</>
 	);
 }

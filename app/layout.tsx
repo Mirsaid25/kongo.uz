@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={philosopher.className}>{children}</body>
+            <body className={`${philosopher.className} bg-[url('/img/book3.jpg')] bg-center bg-cover`}>{children}</body>
         </html>
     );
 }
