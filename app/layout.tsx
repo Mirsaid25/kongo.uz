@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Philosopher } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const philosopher = Philosopher({
+const roboto = Roboto({
     weight: ["400", "700"],
     subsets: ["latin"],
     display: "swap",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${philosopher.className} bg-[url('/img/book3.jpg')] bg-center bg-cover`}>{children}</body>
+            <body className={`${roboto.className} bg-[#F5F5F5]`}>{children}</body>
         </html>
     );
 }

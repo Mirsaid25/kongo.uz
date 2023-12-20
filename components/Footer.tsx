@@ -2,7 +2,7 @@ import { FaTelegramPlane, FaInstagram, FaFacebookF  } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="py-6 border-t border-white mt-[100px] bg-[#ffffff22] backdrop-blur-md">
+        <footer className="py-6 mt-[100px] bg-[#FFF5DB]">
             <div className="max-w-[1000px] max-lg:max-w-[700px] m-auto max-md:w-[90%]">
                 <p className="text-2xl font-bold">KONGO</p>
                 <div className="flex flex-wrap max-sm:flex-col gap-20 max-lg:gap-5 mt-4 justify-between">
