@@ -12,7 +12,7 @@ const merienda = Merienda({
 
 import "swiper/css";
 import "swiper/css/pagination";
-import 'swiper/css/effect-fade';
+import "swiper/css/effect-fade";
 
 function SwiperComponent() {
     return (
@@ -21,7 +21,7 @@ function SwiperComponent() {
                 modules={[Pagination, EffectFade]}
                 spaceBetween={0}
                 slidesPerView={1}
-                effect={'fade'}
+                effect={"fade"}
                 pagination={{ clickable: true }}
                 onSwiper={(swiper: any) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
@@ -34,6 +34,7 @@ function SwiperComponent() {
                             width={260}
                             height={360}
                             alt=""
+                            className="w-[260px] h-[360px] shadow-md"
                         />
                         <div>
                             <h2
@@ -58,6 +59,7 @@ function SwiperComponent() {
                             width={260}
                             height={360}
                             alt=""
+                            className="w-[260px] h-[360px] shadow-md"
                         />
                         <div>
                             <h2
@@ -89,7 +91,7 @@ function SwiperComponent() {
                     onSlideChange={() => console.log("slide change")}
                 >
                     <SwiperSlide>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 gap-4 p-1">
                             <div className="bg-[#FFF5DB] p-4 rounded-md shadow-md flex justify-center items-center">
                                 <p className="text-start">
                                     Best Crime & Mystery Books
@@ -124,7 +126,7 @@ function SwiperComponent() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-2 gap-4 p-1">
                             <div className="bg-[#FFF5DB] p-4 rounded-md shadow-md flex justify-center items-center">
                                 <p className="text-start">
                                     Best Crime & Mystery Books
