@@ -33,6 +33,7 @@ function Header() {
                             />
                         </button>
                     </form>
+
                     <div className="flex items-center gap-6">
                         <button title="liked">
                             <Image
@@ -50,6 +51,9 @@ function Header() {
                                 alt=""
                             />
                         </button>
+                        <div className="w-[52px] h-[52px] rounded-full borders-gradient">
+
+                        </div>
                     </div>
                 </div>
                 <div className="justify-center mt-5 max-sm:mt-3 hidden max-sm:flex w-full">

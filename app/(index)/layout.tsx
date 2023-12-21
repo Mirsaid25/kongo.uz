@@ -27,9 +27,6 @@ export default function IndexLayout({
 				{children}
 			</main>
 			<Footer />
-			<button title="send" className="fixed bottom-10 right-10 max-sm:right-5 bg-[#ffffff22] backdrop-blur-md rounded-full p-3">
-                <GiFeather size={25}/>
-			</button>
 		</>
 	);
 }
