@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { Merienda } from "next/font/google";
@@ -12,20 +12,20 @@ const merienda = Merienda({
 
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/effect-fade';
 
 function SwiperComponent() {
     return (
         <div className="w-full flex justify-between gap-5">
             <Swiper
-                modules={[Pagination]}
+                modules={[Pagination, EffectFade]}
                 spaceBetween={0}
                 slidesPerView={1}
-                navigation
+                effect={'fade'}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
                 onSwiper={(swiper: any) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
-                className={"w-[66%]"}
+                className={"w-[66%] swiper1-paginations"}
             >
                 <SwiperSlide>
                     <div className="flex items-center gap-10">
@@ -81,9 +81,10 @@ function SwiperComponent() {
                     modules={[Navigation]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    navigation
-                    pagination={{ clickable: true }}
-                    scrollbar={{ draggable: true }}
+                    navigation={{
+                        prevEl: ".prev",
+                        nextEl: ".next",
+                    }}
                     onSwiper={(swiper: any) => console.log(swiper)}
                     onSlideChange={() => console.log("slide change")}
                 >
@@ -157,26 +158,28 @@ function SwiperComponent() {
                             </div>
                         </div>
                     </SwiperSlide>
-                </Swiper>
-                <div className="absolute right-3 bottom-2 flex items-center gap-5 z-10">
-                    <div className="swiper-button-prev">
-                        <Image
-                            src={"/icons/arrow-gradient.svg"}
-                            width={15}
-                            height={20}
-                            alt=""
-                            className="rotate-180 cursor-pointer"
-                        />
-                    </div>
+                    <div className="absolute right-3 bottom-2 flex items-center gap-5 z-10">
+                        <div className="prev">
+                            <Image
+                                src={"/icons/arrow-gradient.svg"}
+                                width={15}
+                                height={20}
+                                alt=""
+                                className="rotate-180 cursor-pointer"
+                            />
+                        </div>
 
-                    <Image
-                        src={"/icons/arrow-gradient.svg"}
-                        width={15}
-                        height={20}
-                        alt=""
-                        className="swiper-button-next cursor-pointer"
-                    />
-                </div>
+                        <div className="next">
+                            <Image
+                                src={"/icons/arrow-gradient.svg"}
+                                width={15}
+                                height={20}
+                                alt=""
+                                className="cursor-pointer"
+                            />
+                        </div>
+                    </div>
+                </Swiper>
             </div>
         </div>
     );

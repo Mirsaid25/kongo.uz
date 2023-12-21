@@ -2,55 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
 }
 
-.container{
-  @apply max-w-[1200px] m-auto
+.container {
+    @apply max-w-[1200px] m-auto;
 }
 
-.text_gradient{
+.text_gradient {
     text-transform: uppercase;
-    background: linear-gradient(180deg, #8C00FB 35%, #FCBA11, #00000011);
+    background: linear-gradient(180deg, #8c00fb 35%, #fcba11, #00000011);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #0B2349;
+    color: #0b2349;
     display: table;
 }
 
 .borders-gradient {
-  border: double 2px transparent;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8C00FB,#FCBA11);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+    border: double 2px transparent;
+    background-image: linear-gradient(white, white),
+        radial-gradient(circle at top left, #8c00fb, #fcba11);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
-.swiper-pagination{
-  text-align:right !important;
-  padding-right:25px;
-  padding-bottom: 10px;
+/* swiper section1 */
+
+.swiper1-paginations .swiper-pagination {
+    text-align: right !important;
+    padding-right: 25px;
+    padding-bottom: 10px;
 }
 
-.swiper-pagination-bullet{
-  opacity: 1 !important;
-  width: 15px !important;
-  height: 15px !important;
-  background-color: #f5f5f5 !important;
-  border: double 1px transparent !important;
-  background-image: linear-gradient(#f5f5f5, #f5f5f5), radial-gradient(circle at top left, #8C00FB,#FCBA11) !important;
-  background-origin: border-box !important;
-  background-clip: content-box, border-box !important;
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #f5f5f5 !important;
+    border: double 1px transparent !important;
+    background-image: linear-gradient(#f5f5f5, #f5f5f5),
+        radial-gradient(circle at top left, #8c00fb, #fcba11) !important;
+    background-origin: border-box !important;
+    background-clip: content-box, border-box !important;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet-active {
-  width: 15px;
-  height: 15px;
-  border: none !important;
-  background: radial-gradient(circle at bottom right, #8C00FB,#FCBA11) !important;
+    width: 15px;
+    height: 15px;
+    border: none !important;
+    background: radial-gradient(
+        circle at bottom right,
+        #8c00fb,
+        #fcba11
+    ) !important;
 }
 
+/* swiper2 */
+
+.swiper2-paginations {
+	/* overflow: auto !important; */
+	height: 117%;
+}
+
+.swiper2-paginations .swiper-pagination {
+   position: absolute;
+   bottom: -5px !important;
+   z-index: 10 !important;
+}

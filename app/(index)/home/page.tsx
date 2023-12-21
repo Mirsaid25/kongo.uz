@@ -1,5 +1,7 @@
+import GoodreadsSwiper from "@/components/GoodreadsSwiper";
 import SwiperComponent from "@/components/Swiper";
 
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const categoryArr = [
     {
@@ -56,8 +58,20 @@ function Home() {
     return (
         <div className="container">
             <section className="mt-[7px] flex gap-5">
-               <SwiperComponent/>
+                <SwiperComponent />
             </section>
+            <fieldset className="mt-[54px] flex gap-5 border-t border-t-[#FFB800] pt-5">
+                <legend className="text-center px-10 text-4xl font-bold">
+                    Goodreads Choice Awards
+                </legend>
+                <GoodreadsSwiper />
+            </fieldset>
+            <div className="mt-8 flex justify-end">
+                <button className="flex items-center gap-2">
+                    <p className="text-black font-bold">View All</p>
+                    <FaArrowRightLong size={20} />
+                </button>
+            </div>
         </div>
     );
 }
