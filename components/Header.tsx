@@ -9,27 +9,27 @@ function Header() {
         <header className="container">
             <div className="pt-10 pb-5">
                 <div className="flex w-full items-center justify-between gap-5">
-                    <div className="flex items-center gap-6 max-sm:gap-3">
-                        <h2 className="text-4xl max-md:text-2xl max-sm:text-xl font-extrabold text_gradient">
+                    <div className="flex items-center gap-6 max-md:gap-3">
+                        <h2 className="text-4xl max-lg:text-2xl max-md:text-xl font-extrabold text_gradient">
                             Book Shop
                         </h2>
-                        {/* <div className="border border-[#290247] rounded-md px-4 py-3 max-lg:px-3 max-lg:py-2 max-md:px-2 max-md:py-1 flex items-center gap-3 max-sm:gap-2 cursor-pointer">
-                        <p className="text-[15px] max-md:text-xs font-bold">Каталог</p>
+                        {/* <div className="border border-[#290247] rounded-md px-4 py-3 max-lg:px-3 max-lg:py-2 max-lg:px-2 max-lg:py-1 flex items-center gap-3 max-md:gap-2 cursor-pointer">
+                        <p className="text-[15px] max-lg:text-xs font-bold">Каталог</p>
                         <RxHamburgerMenu size={15}/>
                     </div> */}
                     </div>
 
-                    <form className="borders-gradient max-sm:hidden w-full max-w-[500px] max-md:max-w-[400px] rounded-full flex items-center justify-between gap-2">
+                    <form className="borders-gradient max-md:hidden w-full max-w-[500px] max-lg:max-w-[400px] rounded-full flex items-center justify-between gap-2">
                         <input
                             type="text"
                             placeholder="Поиск"
-                            className="bg-transparent w-full max-sm:text-sm my-3 ml-3 font-medium"
+                            className="bg-transparent w-full max-md:text-sm my-3 ml-3 font-medium"
                         />
 
                         <button title="search" type="submit" className="mr-3">
                             <IoIosSearch
                                 size={20}
-                                className="max-sm:w-[15px]"
+                                className="max-md:w-[15px]"
                             />
                         </button>
                     </form>
@@ -56,18 +56,18 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="justify-center mt-5 max-sm:mt-3 hidden max-sm:flex w-full">
-                    <form className="borders-gradient w-full max-w-[500px] max-md:max-w-[400px] rounded-full flex items-center justify-between gap-2">
+                <div className="justify-center mt-5 max-md:mt-3 hidden max-md:flex w-full">
+                    <form className="borders-gradient w-full max-w-[500px] max-lg:max-w-[400px] rounded-full flex items-center justify-between gap-2">
                         <input
                             type="text"
                             placeholder="Поиск"
-                            className="bg-transparent w-full max-sm:text-sm my-3 ml-3 font-medium"
+                            className="bg-transparent w-full max-md:text-sm my-3 ml-3 font-medium"
                         />
 
                         <button title="search" type="submit" className="mr-3">
                             <IoIosSearch
                                 size={20}
-                                className="max-sm:w-[15px]"
+                                className="max-md:w-[15px]"
                             />
                         </button>
                     </form>

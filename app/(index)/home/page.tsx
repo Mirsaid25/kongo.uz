@@ -65,7 +65,7 @@ function Home() {
                 <section className="mt-[7px] flex gap-5">
                     <SwiperComponent />
                 </section>
-                <section>
+                {/* <section>
                     <fieldset className="w-full mt-[54px] flex gap-5 border-t border-t-[#FFB800] pt-5">
                         <legend className="text-center px-10 text-4xl font-bold">
                             Goodreads Choice Awards
@@ -78,9 +78,9 @@ function Home() {
                             <FaArrowRightLong size={20} />
                         </button>
                     </div>
-                </section>
+                </section> */}
             </div>
-            <section className="mt-[54px] bg-[#FFF8E6] pt-[25px] pb-10">
+            {/* <section className="mt-[54px] bg-[#FFF8E6] pt-[25px] pb-10">
                 <div className="container">
                     <h3 className="text-center text-2xl font-bold">
                         Best selling books
@@ -151,7 +151,7 @@ function Home() {
                     />
                     <button type="submit" className="bg-[#FFB800] px-10 py-2 w-fit text-lg drop-shadow-lg">Subscribe</button>
                 </form>
-            </section>
+            </section> */}
         </>
     );
 }

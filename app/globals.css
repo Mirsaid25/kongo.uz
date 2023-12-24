@@ -14,6 +14,24 @@
     @apply max-w-[1200px] m-auto;
 }
 
+@media only screen and (max-width:1280px){
+    .container {
+        @apply max-w-[1000px] m-auto;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .container {
+        @apply max-w-[730px] m-auto;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .container {
+        @apply max-w-[600px] m-auto;
+    }
+}
+
 .text_gradient {
     text-transform: uppercase;
     background: linear-gradient(180deg, #8c00fb 35%, #fcba11, #00000011);

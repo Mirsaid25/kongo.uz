@@ -16,7 +16,7 @@ import "swiper/css/effect-fade";
 
 function SwiperComponent() {
     return (
-        <div className="w-full flex justify-between gap-5">
+        <div className="w-full flex max-lg:flex-col justify-between gap-5">
             <Swiper
                 modules={[Pagination, EffectFade]}
                 spaceBetween={0}
@@ -25,7 +25,7 @@ function SwiperComponent() {
                 pagination={{ clickable: true }}
                 onSwiper={(swiper: any) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
-                className={"w-[66%] swiper1-paginations"}
+                className={"w-[66%] max-lg:w-full swiper1-paginations"}
             >
                 <SwiperSlide>
                     <div className="flex items-center gap-10">
@@ -78,7 +78,7 @@ function SwiperComponent() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-            <div className={"w-[33%] relative"}>
+            <div className={"w-[33%] max-lg:w-full relative"}>
                 <Swiper
                     modules={[Navigation]}
                     spaceBetween={50}
@@ -160,7 +160,7 @@ function SwiperComponent() {
                             </div>
                         </div>
                     </SwiperSlide>
-                    <div className="absolute right-3 bottom-2 flex items-center gap-5 z-10">
+                    <div className="absolute right-3 bottom-2 max-lg:bottom-5 max-lg:right-5 flex items-center gap-5 z-10">
                         <div className="prev">
                             <Image
                                 src={"/icons/arrow-gradient.svg"}
