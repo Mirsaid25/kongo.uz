@@ -34,13 +34,14 @@ function Header() {
                         </button>
                     </form>
 
-                    <div className="flex items-center gap-6">
+                    <div className="flex items-center gap-6 max-md:gap-4">
                         <button title="liked">
                             <Image
                                 src={"/icons/heart-icon.svg"}
                                 width={30}
                                 height={30}
                                 alt=""
+                                className="max-md:w-[20px] max-md:h-[20px]"
                             />
                         </button>
                         <button title="card">
@@ -49,19 +50,20 @@ function Header() {
                                 width={30}
                                 height={30}
                                 alt=""
+                                className="max-md:w-[20px] max-md:h-[20px]"
                             />
                         </button>
-                        <div className="w-[52px] h-[52px] rounded-full borders-gradient">
+                        <div className="w-[52px] h-[52px] max-md:w-[30px] max-md:h-[30px] rounded-full borders-gradient">
 
                         </div>
                     </div>
                 </div>
-                <div className="justify-center mt-5 max-md:mt-3 hidden max-md:flex w-full">
-                    <form className="borders-gradient w-full max-w-[500px] max-lg:max-w-[400px] rounded-full flex items-center justify-between gap-2">
+                <div className="justify-center mt-2 hidden max-md:flex w-full">
+                    <form className="borders-gradient w-full max-w-[500px] max-lg:max-w-[400px] max-sm:max-w-none max-sm:w-[70%] rounded-full flex items-center justify-between gap-2">
                         <input
                             type="text"
                             placeholder="Поиск"
-                            className="bg-transparent w-full max-md:text-sm my-3 ml-3 font-medium"
+                            className="bg-transparent w-full max-md:text-sm my-1 mx-3 font-medium text-sm"
                         />
 
                         <button title="search" type="submit" className="mr-3">

@@ -14,24 +14,6 @@
     @apply max-w-[1200px] m-auto;
 }
 
-@media only screen and (max-width:1280px){
-    .container {
-        @apply max-w-[1000px] m-auto;
-    }
-}
-
-@media only screen and (max-width:1024px){
-    .container {
-        @apply max-w-[730px] m-auto;
-    }
-}
-
-@media only screen and (max-width:768px){
-    .container {
-        @apply max-w-[600px] m-auto;
-    }
-}
-
 .text_gradient {
     text-transform: uppercase;
     background: linear-gradient(180deg, #8c00fb 35%, #fcba11, #00000011);
@@ -91,4 +73,39 @@
    position: absolute;
    bottom: -5px !important;
    z-index: 10 !important;
+}
+
+
+@media only screen and (max-width:1280px){
+    .container {
+        @apply max-w-[1000px] m-auto;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .container {
+        @apply max-w-[730px] m-auto;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .container {
+        @apply max-w-[600px] m-auto;
+    }
+}
+
+@media only screen and (max-width:630px){
+    .container {
+        @apply max-w-none w-[90%] m-auto;
+    }
+
+    .swiper1-paginations .swiper-pagination {
+        text-align: bottom !important;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .swiper2-paginations {
+        padding-bottom: 30px !important;
+    }
 }

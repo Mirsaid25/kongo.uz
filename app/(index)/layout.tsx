@@ -23,7 +23,7 @@ export default function IndexLayout({
 	return (
 		<>
 			<Header/>
-			<main className="mt-20">
+			<main className="mt-20 max-lg:mt-10 max-md:mt-5">
 				{children}
 			</main>
 			<Footer />

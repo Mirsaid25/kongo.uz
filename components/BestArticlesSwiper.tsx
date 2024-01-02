@@ -8,8 +8,20 @@ function BestArticlesSwiper() {
     return (
         <Swiper
             modules={[Navigation]}
-            spaceBetween={24}
-            slidesPerView={3}
+            breakpoints={{
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+            }}
             loop={true}
             navigation={{
                 prevEl: ".prev",
@@ -28,7 +40,7 @@ function BestArticlesSwiper() {
                             alt=""
                             className="w-full h-full"
                         />
-                        <p className="absolute bottom-24 leading-[19px] left-5 right-5 text-white">
+                        <p className="absolute bottom-24 leading-[19px] left-5 right-5 text-white max-xl:text-sm max-xl:leading-[17px] max-xl:bottom-20 max-lg:leading-5 max-md:leading-4 max-sm:bottom-24 max-sm:text-base">
                             The ultimate productivity hack is saying no. Not
                             doing something will always be faster than doing it.
                             This statement reminds me of the old computer
@@ -38,7 +50,7 @@ function BestArticlesSwiper() {
                     </div>
                 </SwiperSlide>
             ))}
-            <div className="absolute bottom-0 flex items-center gap-5 left-1/2 z-20">
+            <div className="absolute bottom-0 flex items-center gap-5 left-1/2 -translate-x-1/2 z-20">
                 <div className="prev">
                     <Image
                         src={"/icons/arrow-gradient.svg"}
