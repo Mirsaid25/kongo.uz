@@ -10,8 +10,8 @@ function Header() {
             <div className="pt-10 pb-5">
                 <div className="flex w-full items-center justify-between gap-5">
                     <div className="flex items-center gap-6 max-md:gap-3">
-                        <h2 className="text-4xl max-lg:text-2xl max-md:text-xl font-extrabold text_gradient">
-                            Book Shop
+                        <h2 className="text-5xl max-lg:text-3xl max-md:text-2xl font-extrabold text_gradient">
+                            KONGO
                         </h2>
                         {/* <div className="border border-[#290247] rounded-md px-4 py-3 max-lg:px-3 max-lg:py-2 max-lg:px-2 max-lg:py-1 flex items-center gap-3 max-md:gap-2 cursor-pointer">
                         <p className="text-[15px] max-lg:text-xs font-bold">Каталог</p>
@@ -53,9 +53,7 @@ function Header() {
                                 className="max-md:w-[20px] max-md:h-[20px]"
                             />
                         </button>
-                        <div className="w-[52px] h-[52px] max-md:w-[30px] max-md:h-[30px] rounded-full borders-gradient">
-
-                        </div>
+                        <div className="w-[52px] h-[52px] max-md:w-[30px] max-md:h-[30px] rounded-full borders-gradient"></div>
                     </div>
                 </div>
                 <div className="justify-center mt-2 hidden max-md:flex w-full">
