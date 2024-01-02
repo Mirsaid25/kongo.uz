@@ -39,7 +39,7 @@ function BestSellsBooksSwiper() {
                             width={300}
                             height={200}
                             alt=""
-                            className="w-[300px] h-[400px] max-xl:w-[250px] max-xl:h-[300px] max-lg:hidden shadow-md"
+                            className="w-[300px] h-[400px] max-xl:w-[250px] max-xl:h-[300px] aspect-[3/4] max-lg:hidden shadow-md"
                         />
 
                         <div className="flex flex-col items-start max-lg:hidden">
@@ -66,21 +66,21 @@ function BestSellsBooksSwiper() {
                             </div>
                         </div>
 
-                        <div className="w-full max-lg:flex items-center gap-5 hidden">
+                        <div className="w-full max-lg:flex items-center gap-5 max-sm:gap-3 hidden">
                             <Image
                                 src={"/img/book2.jpg"}
                                 width={300}
                                 height={200}
                                 alt=""
-                                className="w-[300px] h-[400px] max-xl:w-[250px] max-xl:h-[300px] max-lg:w-[150px] max-lg:h-[200px] shadow-md"
+                                className="aspect-[3/4] max-sm:w-[130px] shadow-md"
                             />
                             <div>
-                                <h3 className="font-bold text-2xl max-sm:text-xl">
+                                <h3 className="font-bold text-2xl max-sm:text-lg">
                                     This Time Tomorrow
                                 </h3>
-                                <div className="items-center gap-3 mt-2 hidden max-sm:flex">
-                                    <div className="w-[50px] h-[50px] bg-black rounded-full overflow-hidden"></div>
-                                    <p className="text-center">
+                                <div className="items-center gap-3 max-sm:gap-2 mt-2 hidden max-sm:flex">
+                                    <div className="w-[50px] h-[50px] max-sm:h-[40px] max-sm:w-[40px] bg-black rounded-full overflow-hidden"></div>
+                                    <p className="text-center max-sm:text-sm">
                                         Gabrielle Zevin
                                     </p>
                                 </div>
@@ -92,7 +92,7 @@ function BestSellsBooksSwiper() {
                                 <div className="w-[85px] h-[85px] max-xl:w-[50px] max-xl:h-[50px] bg-black rounded-full overflow-hidden"></div>
                                 <p className="text-center">Gabrielle Zevin</p>
                             </div>
-                            <p className="mt-5">
+                            <p className="mt-5 max-sm:mt-3 max-sm:text-sm">
                                 With her celebrated humor, insight, and heart,
                                 beloved New York Times bestseller Emma Straub
                                 offers her own twist on traditional time travel

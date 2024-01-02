@@ -32,7 +32,7 @@ function BestArticlesSwiper() {
         >
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((item) => (
                 <SwiperSlide key={item}>
-                    <div className="w-full flex gap-5 items-center mb-16">
+                    <div className="w-full flex gap-5 items-center mb-16 aspect-video">
                         <Image
                             src={"/img/endBlock.png"}
                             width={200}
@@ -40,7 +40,7 @@ function BestArticlesSwiper() {
                             alt=""
                             className="w-full h-full"
                         />
-                        <p className="absolute bottom-24 leading-[19px] left-5 right-5 text-white max-xl:text-sm max-xl:leading-[17px] max-xl:bottom-20 max-lg:leading-5 max-md:leading-4 max-sm:bottom-24 max-sm:text-base">
+                        <p className="absolute bottom-24 leading-[19px] left-5 right-5 text-white max-xl:text-sm max-xl:leading-[17px] max-xl:bottom-20 max-lg:leading-5 max-md:leading-4 max-sm:bottom-24 max-sm:text-sm max-[390px]:text-xs max-[390px]:bottom-20">
                             The ultimate productivity hack is saying no. Not
                             doing something will always be faster than doing it.
                             This statement reminds me of the old computer

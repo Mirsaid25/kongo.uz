@@ -84,7 +84,7 @@ function Home() {
             </div>
             <section className="mt-[54px] max-sm:mt-10 bg-[#FFF8E6] pt-[25px] pb-10 max-sm:pb-7">
                 <div className="container">
-                    <h3 className="text-center text-2xl font-bold">
+                    <h3 className="text-center text-2xl max-sm:text-xl font-bold">
                         Best selling books
                     </h3>
                     <div className="mt-6">

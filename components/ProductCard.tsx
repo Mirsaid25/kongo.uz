@@ -9,7 +9,7 @@ function ProductCard() {
                 width={200}
                 height={230}
                 alt=""
-                className="w-full h-[240px] max-lg:h-[220px] max-md:h-[180px] max-sm:h-[150px] max-[430px]:h-[120px] shadow-lg"
+                className="aspect-[3/4] shadow-lg"
             />
             <h3 className="font-bold text-center leading-[18px] max-sm:text-xs">
                 Tomorrow, and Tomorrow, and Tomorrow

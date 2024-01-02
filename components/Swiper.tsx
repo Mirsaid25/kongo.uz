@@ -34,7 +34,7 @@ function SwiperComponent() {
                             width={260}
                             height={360}
                             alt=""
-                            className="w-[260px] h-[360px] max-lg:h-[240px] max-lg:w-[220px] max-sm:h-[160px] max-sm:w-[110px] shadow-md"
+                            className="w-[490px] max-xl:w-[740px] max-lg:w-[250px] max-sm:w-[130px] aspect-[3/4] shadow-md"
                             loading="eager"
                         />
                         <div>
@@ -60,7 +60,7 @@ function SwiperComponent() {
                             width={260}
                             height={360}
                             alt=""
-                            className="w-[260px] h-[360px] max-lg:h-[240px] max-lg:w-[220px] max-sm:h-[160px] max-sm:w-[110px] shadow-md"
+                            className="w-[490px] max-xl:w-[740px] max-lg:w-[250px] max-sm:w-[130px] aspect-[3/4] shadow-md"
                             loading="eager"
                         />
                         <div>
@@ -95,22 +95,22 @@ function SwiperComponent() {
                     <SwiperSlide>
                         <div className="grid grid-cols-2 gap-4 max-sm:gap-2 p-1">
                             <div className="bg-[#FFF5DB] p-4 max-sm:p-3 rounded-md shadow-md flex justify-center items-center">
-                                <p className="text-start">
+                                <p className="text-start max-sm:text-xs">
                                     Best Crime & Mystery Books
                                 </p>
                             </div>
                             <div className="bg-[#FFF5DB] p-4 max-sm:p-3 rounded-md shadow-md flex justify-center items-center">
-                                <p className="text-start">
+                                <p className="text-start max-sm:text-xs">
                                     Popular Kindle Notes & Highlights on
                                     Goodreads
                                 </p>
                             </div>
                             <div className="bg-[#FFF5DB] py-8 max-sm:py-5 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3">
-                                <p className="text-start">
+                                <p className="text-start  max-sm:text-xs">
                                     LISTS BOOK USER HAVE VOTED ON
                                 </p>
                             </div>
-                            <div className="bg-[#FFF5DB] pt-5 px-4 pb-8 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3 gap-9">
+                            <div className="bg-[#FFF5DB] pt-5 px-4 pb-8 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3 gap-9 max-sm:text-sm">
                                 <div className="flex flex-col gap-3">
                                     <p className="font-bold">Quotes:</p>
                                     <Image
@@ -130,22 +130,22 @@ function SwiperComponent() {
                     <SwiperSlide>
                         <div className="grid grid-cols-2 gap-4 max-sm:gap-2 p-1">
                             <div className="bg-[#FFF5DB] p-4 max-sm:p-3 rounded-md shadow-md flex justify-center items-center">
-                                <p className="text-start">
+                                <p className="text-start max-sm:text-xs">
                                     Best Crime & Mystery Books
                                 </p>
                             </div>
                             <div className="bg-[#FFF5DB] p-4 max-sm:p-3 rounded-md shadow-md flex justify-center items-center">
-                                <p className="text-start">
+                                <p className="text-start max-sm:text-xs">
                                     Popular Kindle Notes & Highlights on
                                     Goodreads
                                 </p>
                             </div>
                             <div className="bg-[#FFF5DB] py-8 max-sm:py-5 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3">
-                                <p className="text-start">
+                                <p className="text-start  max-sm:text-xs">
                                     LISTS BOOK USER HAVE VOTED ON
                                 </p>
                             </div>
-                            <div className="bg-[#FFF5DB] pt-5 px-4 pb-8 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3 gap-9">
+                            <div className="bg-[#FFF5DB] pt-5 px-4 pb-8 rounded-md shadow-md flex justify-center items-center col-start-1 col-end-3 gap-9 max-sm:text-sm">
                                 <div className="flex flex-col gap-3">
                                     <p className="font-bold">Quotes:</p>
                                     <Image
