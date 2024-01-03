@@ -3,6 +3,7 @@ import { IoIosSearch } from "react-icons/io";
 import { CiBookmark } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
     return (
@@ -11,7 +12,7 @@ function Header() {
                 <div className="flex w-full items-center justify-between gap-5">
                     <div className="flex items-center gap-6 max-md:gap-3">
                         <h2 className="text-5xl max-lg:text-3xl max-md:text-2xl font-extrabold text_gradient">
-                            KONGO
+                            <Link href={"/"}>KONGO</Link>
                         </h2>
                         {/* <div className="border border-[#290247] rounded-md px-4 py-3 max-lg:px-3 max-lg:py-2 max-lg:px-2 max-lg:py-1 flex items-center gap-3 max-md:gap-2 cursor-pointer">
                         <p className="text-[15px] max-lg:text-xs font-bold">Каталог</p>
